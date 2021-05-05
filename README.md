@@ -13,6 +13,11 @@ This repository contains four Jupyter Notebook files:
  		- Code used to run a random 10 fold cross validation of the cGAN
  	- developcGAN-(0,1)_indv_18_1_final.ipynb
  		- Code used to train the final cGAN model
+ - Local routines
+ 	- chemdataprep.py
+ 	- gen_AggE.py
+ 	- NNbuild_train_vis.py
+ 	- toxmathandler_AG.py
 
  These files should be run in the Singularity container environment build specificaly for this project to ensure all dependencies are present and that the code runs error free. The container can be found at: https://cloud.sylabs.io/library/ajgreen/default/go_gan_zt_container
 
