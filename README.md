@@ -18,9 +18,8 @@ This repository contains four Jupyter Notebook files:
 
 This container can be run with port forwarding using the following code (see https://docs.ycrc.yale.edu/clusters-at-yale/guides/jupyter/ guide)
 
-nvidia-modprobe -u -c=0
-
-singularity exec --nv ~/images/tensorflow2-0-gpu-py3-jupyterNL.sif jupyter lab --no-browser --port=${port} --ip=${node}
+> nvidia-modprobe -u -c=0
+> singularity exec --nv ~/images/tensorflow2-0-gpu-py3-jupyterNL.sif jupyter lab --no-browser --port=${port} --ip=${node}
 
 
  Sample PDBs and toxicity data have been included.
