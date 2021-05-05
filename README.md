@@ -15,3 +15,10 @@ This repository contains four Jupyter Notebook files:
  		- Code used to train the final cGAN model
 
  These files should be run in the Singularity container environment build specificaly for this project to ensure all dependencies are present and that the code runs error free. The container can be found at: https://cloud.sylabs.io/library/ajgreen/default/go_gan_zt_container
+
+This container can be run with port forwarding using the following code (see https://docs.ycrc.yale.edu/clusters-at-yale/guides/jupyter/ guide)
+nvidia-modprobe -u -c=0
+singularity exec --nv ~/images/tensorflow2-0-gpu-py3-jupyterNL.sif jupyter lab --no-browser --port=${port} --ip=${node}
+
+
+ Sample PDBs and toxicity data have been included.
