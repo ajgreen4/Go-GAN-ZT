@@ -27,6 +27,8 @@ This container can be run with port forwarding using the following code (see htt
 > singularity exec --nv ~/images/tensorflow2-0-gpu-py3-jupyterNL.sif jupyter lab --no-browser --port=${port} --ip=${ip}
 
 
-- Sample_Data
+- Sample_Data.zip
 	- Sample PDBs and toxicity data have been included.
+- Sample_Data_Info.csv
+	- Includes CASRN, chemical name, aggregate entropy value,  and activity (toxicity)
 
